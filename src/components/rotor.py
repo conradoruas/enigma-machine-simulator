@@ -6,13 +6,11 @@ class Rotor:
     left: str
     right: str
     notch: str
-    rotate_in_notch: bool
 
-    def __init__(self, wiring: str, notch: str, rotate_in_notch: bool = False) -> None:
+    def __init__(self, wiring: str, notch: str) -> None:
         self.left = alphabet
         self.right = wiring
         self.notch = notch
-        self.rotate_in_notch = rotate_in_notch
 
     def forward(self, signal: int) -> int:
         letter = self.right[signal]
