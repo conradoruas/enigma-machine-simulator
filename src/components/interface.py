@@ -8,7 +8,6 @@ class Interface:
         pygame.font.init()
         pygame.display.set_caption("Enigma Machine Simulator")
 
-        #global variables
         self.width = 1600
         self.height = 900
         self.screen = pygame.display.set_mode((self.width, self.height))
@@ -17,7 +16,7 @@ class Interface:
         self.running = True
         self.enigma = enigma
 
-        #create fonts
+        #define fonts
         self.BOLD = pygame.font.SysFont("Roboto", 25, bold=True)
         self.MONO = pygame.font.SysFont("Roboto", 25)
 
