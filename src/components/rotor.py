@@ -39,8 +39,6 @@ class Rotor:
         notch_index = alphabet.index(self.notch)
         self.notch = alphabet[(notch_index - ring + 1) % len(alphabet)]
 
-    def is_in_notch(self) -> bool:
-        return self.left[0] == self.notch
 
     def __str__(self) -> str:
         return f"{self.left}\n{self.right}"
