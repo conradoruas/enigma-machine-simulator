@@ -2,7 +2,7 @@ from components import Enigma, Keyboard, Plugboard, Reflector, Rotor, alphabet, 
 
 def main() -> None:
     keyboard = Keyboard()
-    plugboard = Plugboard(["OB", "CD", "EF"])
+    plugboard = Plugboard([])
     I = Rotor(alphabet.wiring_enigma_rotor_I, alphabet.notch_enigma_rotor_I)
     II = Rotor(alphabet.wiring_enigma_rotor_II, alphabet.notch_enigma_rotor_II)
     III = Rotor(alphabet.wiring_enigma_rotor_III, alphabet.notch_enigma_rotor_III)

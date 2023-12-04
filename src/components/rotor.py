@@ -53,11 +53,11 @@ class Rotor:
             text_box = letter.get_rect(center = (x+w/4, y+(index+1)*h/27))
 
             if index == 0:
-                pygame.draw.rect(screen, "teal", text_box, border_radius=1)
+                pygame.draw.rect(screen, "#ADD8E6", text_box, border_radius=1)
 
             if self.left[index] == self.notch:
-                letter = font.render(self.notch, True, "#333333")
-                pygame.draw.rect(screen, "#333333", text_box, border_radius=1)
+                letter = font.render(self.notch, True, "teal")
+                pygame.draw.rect(screen, "#FF7F7F", text_box, border_radius=1)
 
             screen.blit(letter, text_box)
 
